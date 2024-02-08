@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    text-transform: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.red-section {
+    background-color: rgba(34,0,147,255);
+    display: flex;
+    height: 60px;
+    align-items: center;
+    color: white; /* Set the text color to white */
+    font-size: 20px;
+    justify-content: space-between;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5%;
+}
+
+.red-section .name {
+    font-size: 20px;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.red-section p {
+    padding-right: 80px;
+    font-size: 20px;
+}
+
+.header {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border: 0px solid;
+    justify-content: space-between;
+    padding: 32px 9%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    height: 30px;
+}
+
+.header .logo .logo1 {
+    height: 160px;
+    margin-right: 35px;
+    margin-top: -15px;
+}
+
+.header .navbar a {
+    font-size: 23px;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.header .navbar a:hover {
+    color: rgba(34, 0, 147, 255);
+    font-size: 2.5rem;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    .red-section {
+        background-color: blue;
+        padding: 0.5% 5%;
+    }
+
+    .red-section .name {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .red-section p {
+        padding-right: 15px;
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 20px 5%;
+    }
+
+    .header .logo .logo1 {
+        height: 100px;
+    }
+
+    .header .navbar a {
+        font-size: 15px;
+    }
+}
